@@ -175,6 +175,7 @@ public class Menu {
                                         System.out.println("Usuario eliminado correctamente");
                                     }
                                 }
+
                             } catch (BankAccountException e) {
                                 System.out.println(e);
                             }
