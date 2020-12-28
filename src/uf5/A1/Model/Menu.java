@@ -1,5 +1,6 @@
 package uf5.A1.Model;
 
+import jdk.swing.interop.SwingInterOpUtils;
 import uf5.A1.Control.BankAccountException;
 import uf5.A1.Control.ClientAccountException;
 import uf5.A1.Control.OperacionsBanc;
@@ -171,6 +172,7 @@ public class Menu {
                                 for (CompteEstalvi compteEstalvi: opB.listaDeComptes){
                                     if (compteEstalvi.getNumCompte().equals(numeroCuentaL)) {
                                         System.out.println(compteEstalvi.removeUser(dniDelete));
+                                        System.out.println("Usuario eliminado correctamente");
                                     }
                                 }
 
