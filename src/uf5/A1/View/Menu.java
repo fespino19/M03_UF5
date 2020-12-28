@@ -1,9 +1,10 @@
-package uf5.A1.Model;
+package uf5.A1.View;
 
-import jdk.swing.interop.SwingInterOpUtils;
 import uf5.A1.Control.BankAccountException;
 import uf5.A1.Control.ClientAccountException;
 import uf5.A1.Control.OperacionsBanc;
+import uf5.A1.Model.Client;
+import uf5.A1.Model.CompteEstalvi;
 
 import java.util.Scanner;
 
