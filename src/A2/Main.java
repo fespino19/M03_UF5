@@ -26,12 +26,13 @@ public class Main {
         Pattern PareNoel = Pattern.compile("\\*<]:-DOo");
         Pattern Rens = Pattern.compile(">:o\\)");
         Pattern Ajudants = Pattern.compile("[^*]<]:-D");
+        int numerolinea=0;
         int pareVegades = 0;
         int rensVegades = 0;
         int ajudantsVegades = 0;
 
         while (linea != null){
-            System.out.println("Nueva linea");
+            System.out.println("linea "+numerolinea);
             Matcher pare = PareNoel.matcher(linea);
             Matcher rens = Rens.matcher(linea);
             Matcher ajudants = Ajudants.matcher(linea);
