@@ -25,7 +25,7 @@ public class Main {
 
         Pattern PareNoel = Pattern.compile("\\*<]:-DOo");
         Pattern Rens = Pattern.compile(">:o\\)");
-        Pattern Ajudants = Pattern.compile("[*]<]:-D");
+        Pattern Ajudants = Pattern.compile("[^*]<]:-D");
         int pareVegades = 0;
         int rensVegades = 0;
         int ajudantsVegades = 0;
