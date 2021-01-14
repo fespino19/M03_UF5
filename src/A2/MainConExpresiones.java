@@ -4,11 +4,11 @@ import java.io.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Main {
+public class MainConExpresiones {
 
     public static void main(String[] args) {
         String home = System.getProperty("user.home");
-        File file = new File(home+"/"+"santako.txt");
+        File file = new File(home+"/Desktop/santako.txt");
         FileReader fr = null;
         String linea = null;
         try {
@@ -26,7 +26,7 @@ public class Main {
         Pattern PareNoel = Pattern.compile("\\*<]:-DOo");
         Pattern Rens = Pattern.compile(">:o\\)");
         Pattern Ajudants = Pattern.compile("[^*]<]:-D");
-        int numerolinea=0;
+        int numerolinea=1;
         int pareVegades = 0;
         int rensVegades = 0;
         int ajudantsVegades = 0;
@@ -54,6 +54,7 @@ public class Main {
 
             try {
                 linea=br.readLine();
+                numerolinea++;
             } catch (IOException e) {
                 e.printStackTrace();
             }
